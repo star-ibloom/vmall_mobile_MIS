@@ -11,5 +11,8 @@ router.route('/save')
 router.route('/find')
 .get(ComController.find)
 
+router.route('/remove')
+.delete(ComController.remove)
+
 module.exports = router;
 

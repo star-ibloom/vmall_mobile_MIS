@@ -9,7 +9,7 @@ const fileupload = (req,res,next) => {
         },
         filename: function(req,file,cb){
             let fn = file.originalname
-            let dot = fn.lastIndexOf('.')
+            let dot = fn.lastIndexOf('.') 
             let filename = file.fieldname + '-' + Date.now() + fn.substr(dot) 
             req.filename = filename
             // console.log(filename)
